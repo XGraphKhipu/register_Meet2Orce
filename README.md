@@ -1,23 +1,30 @@
-In MeetUP
-Press F12
+En MeetUP, con cada participante con una publicación de "presente" en el chat:
+
+<img src="https://i.ibb.co/BKdhvgh/meet.jpg" width="60%">
+
+Ingresamos con F12 a nuestro inspector de código, nos dirigimos al panel de "consola"
 
 Pegar y ejecutar el siguiente código:
-
+```javascript
 f = document.getElementsByClassName("YTbUzc");
 names_meet = [];
 for (i = 0; i < f.length; i++) {
     names_meet.push(f[i].innerHTML.split(" "))
 };
 copy("names_meet = " + JSON.stringify(names_meet))
-
+```
 
 En la página de registro de asistencia de alumnos de Orce, 
+
+
+<img src="https://i.ibb.co/MSfHdPW/orce.jpg" width="60%">
+
 Presionar F12, abrimos el inspector del browser.
 
 Primero realizamos un Ctrl+V y ejecutamos el código pegado, luego copiamos 
 y ejecutamos el siguiente código:
 
-
+```javascript
 trs = document.getElementsByClassName("table table-hover")[0].getElementsByTagName("tr")
 names_orce = [];
 for(i=1;i<trs.length;i++) {
@@ -39,7 +46,7 @@ for(i = 0; i < checks.length; i++) {
             checks[i].checked = true
     }
 }
-
+```
 Con ello tendríamos que solo presionar el boton de Registrar Tema
 
 
